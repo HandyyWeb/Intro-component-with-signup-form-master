@@ -13,14 +13,14 @@ function validateForm(){
                 text2 = "email@example/com"
             }
             else {
-                text1 = `${attributeName} cannot be empty`; /* Modify the text variable with the appropriate name for each input elements */
+                text1 = `${attributeName} cannot be empty`; /* Modify the text variable with the appropriate name for each input element */
             }
         }
-        else { /* If there is content within the input, don't change anything */
+        else { /* If there is content in the input, don't change anything */
             text1 = ""
             document.getElementsByClassName("icon")[i].style.display = 'none'
             input[i].style.border = "1px solid gray"     
         }
-        document.getElementsByClassName("text")[i].innerHTML = text1; /* Change the paragraph content for with the text variable that has been previously set*/
+        document.getElementsByClassName("text")[i].innerHTML = text1; /* Change the content of the paragraph using the previously set text variable */
     }
 }
