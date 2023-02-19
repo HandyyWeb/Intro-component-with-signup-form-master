@@ -30,63 +30,86 @@ main {
 
 /*Customize header*/
 
-.main__header__title {
+.title {
   padding-top: 1.5rem;
   color: white;
 }
 
-.main__header__paragraph {
+.summary {
   padding: 1.5rem 0 1.5rem 0;
   line-height: 1.5rem;
   font-size: 16px;
   color: white;
 }
 
-.main__container1 {
+.container2 {
   margin: 2rem 0 2rem 0;
   line-height: 26px;
   padding: 0.7rem 2rem 0.7rem 2rem;
   border-radius: 10px;
   color: white;
   background-color: var(--blue);
+  box-shadow: 0px 10px 1px #36333352;
 }
-.main__container1__paragraph__span--emphasize {
+.emphasize {
   font-weight: bolder;
 }
 
-.main__container2 {
+.container3 {
   border-radius: 10px;
   padding: 1rem;
   text-align: left;
   background-color: white;
   min-height: 14rem;
+  box-shadow: 0px 10px 1px #36333352;
 }
 
 /*Customize the form*/
 
-.main__container2__form__input {
+[required] {
   border-radius: 5px;
   border: 1px solid gray;
   margin: 0.5rem;
   padding: 1rem 1.3rem 1rem 1.3rem;
 }
 
-.main__container2__button {
+.button1 {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0);
   background-color: var(--green);
   padding: 1rem 1.5rem 1rem 1.5rem;
   margin: 1rem;
+  box-shadow: 0px 5px 1px #3a9d3ab8;
 }
 
-.main__container2__conditions {
+.conditions {
   color: var(--grayish_blue);
   text-align: center;
   font-size: small;
 }
 
-.main__container2__conditions--red {
+.conditions_red {
   color: red;
+}
+
+.button1:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+
+.icon {
+  position: relative;
+  bottom: 4.5rem;
+  left: 12rem;
+  display: none;
+}
+
+.container3 .text {
+  color: red;
+  word-wrap: break-word;
+  font-style: italic;
+  font-size: medium;
+  text-align: right;
 }
 
 @font-face {
@@ -98,5 +121,58 @@ main {
   main {
     display: flex;
     flex-direction: row;
+    padding-top: 4rem;
+    max-width: 100%;
+  }
+  header {
+    font-size: 2rem;
+  }
+
+  .form1 {
+    padding: 1rem;
+  }
+
+  .container1 {
+    font-size: large;
+    text-align: left;
+    padding-top: 10rem;
+    max-width: 38rem;
+    font-size: 1.6rem;
+  }
+
+  .container3 {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+
+  section {
+    max-width: 40rem;
+  }
+
+  p.summary {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  header.container1 {
+    padding: 10rem 3rem 3rem 3rem;
+  }
+
+  [required] {
+    padding-right: 15rem;
+    display: block;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+  .button1 {
+    padding: 1rem 8.5rem 1rem 8.5rem;
+    color: white;
+  }
+
+  p.conditions {
+    margin-bottom: 2rem;
+  }
+
+  .icon {
+    bottom: 5rem;
+    left: 25rem;
   }
 }
