@@ -56,6 +56,7 @@ main {
 }
 
 .container3 {
+  font-weight: bold;
   border-radius: 10px;
   padding: 1rem;
   text-align: left;
@@ -69,8 +70,16 @@ main {
 [required] {
   border-radius: 5px;
   border: 1px solid gray;
-  margin: 0.5rem;
+  margin: 1rem;
   padding: 1rem 1.3rem 1rem 1.3rem;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+input::placeholder {
+  font-weight: bold;
+  color: gray;
 }
 
 .button1 {
@@ -99,22 +108,28 @@ main {
 
 .icon {
   position: relative;
-  bottom: 4.5rem;
+  bottom: 2.7rem;
   left: 12rem;
   display: none;
 }
 
 .container3 .text {
   color: red;
-  word-wrap: break-word;
   font-style: italic;
-  font-size: medium;
+  font-size: small;
   text-align: right;
+  margin-bottom: 0px;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url(https://fonts.google.com/specimen/Poppins.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(fonts/Poppins-SemiBold.ttf);
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {
@@ -159,7 +174,14 @@ main {
   [required] {
     padding-right: 15rem;
     display: block;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem 1rem 1rem 0rem;
+  }
+
+  .container3 .text {
+    font-size: small;
+    margin-top: 0;
+    position: relative;
+    top: -15px;
   }
 
   .button1 {
@@ -172,7 +194,7 @@ main {
   }
 
   .icon {
-    bottom: 5rem;
+    bottom: 2.7rem;
     left: 25rem;
   }
 }
